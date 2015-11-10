@@ -1,0 +1,33 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  background-image: url("http://cfile24.uf.tistory.com/image/1160663A50B48F7827BB7C");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;  
+  background-size: 100%;
+  
+}
+
+.normal input {
+  margin-bottom: 10px;
+  
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.intro {
+  margin: 30px;
+  border: 1px solid black;
+  background-color: #101010;
+}
+
+.maintitle {
+  text-align: center;
+}
+
+li {
+  color: black;
+}

@@ -1,0 +1,8 @@
+<h1>Profile</h1>
+
+<h2> Here is your current user information</h2>
+
+<br>
+    <% if logged_in? %>
+<a href="/profile/<%= @user.id %>/edit_profile">Edit Profile</a>
+</br>

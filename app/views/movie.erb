@@ -1,0 +1,23 @@
+<h1><%= @movie.title %></h1>
+<h2><%= @movie.director %></h2>
+<h2><%= @movie.description %></h2>
+
+<img src="<%= @movie.image_art %>">
+
+<br>
+<% if logged_in? %>
+<a href="/movies/<%= @movie.id %>/reviews/new">Add Review</a>
+<a href="/movies/<%= @movie.id %>/edit">Edit Movie</a>
+</br>
+<% end %>
+
+<% @movie.reviews.each do |review| %>
+    <div>
+    <% if review.user %>
+      <h3><%= review.user.username %>: <%= review.score %></h3>
+    <% else %>
+      <h3>Anonymous: <%= review.score %></h3>
+    <% end %>
+    <p><%= review.comments %></p>
+    </div>
+<% end %>

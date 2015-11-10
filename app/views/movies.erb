@@ -1,0 +1,17 @@
+<h1>Movies</h1>
+<h2>Here are our movies</h2>
+
+<!--<form method="get" action="/movies">
+  <input type="text" name="q" placeholder="Enter search title" value="<%= params[:q] %>">
+  <button type="submit">Search</button>
+  
+</form> -->
+
+<ul>
+  <% @movies.each do |movie| %>
+    <li>
+      <a href="/movies/<%= movie.id %>"><%= movie.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
